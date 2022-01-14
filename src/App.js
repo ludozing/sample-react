@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { useState, useRef } from 'react'
+import Counter from './components/Counter';
 import './App.css';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       {/* ref를 통해 앵커 설치 */}
         <button onClick={onClick}>인풋의 value 가져오기</button>
       </p>
+      <Counter />
     </div>
   );
 }
