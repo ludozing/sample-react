@@ -5,7 +5,9 @@ import './App.css';
 function App() {
   const [currentNum,setCurrentNum]=useState()
   const num = useRef(6);
-  useRef의 기능은
+  // useRef의 기능은 두 가지다.
+  // 1. 변경 가능한 값을 설정하는 것. 그러나 useState와 달리 리렌더링 트리거가 아니므로 즉각 변화를 확인할 순 없다.
+  // 2. DOM을 선택하는 것. ref={useRef()를 담은 변수}를 태그에 attribute로 달아 놓으면, .current.value 등으로 접근할 수 있다.
   const usernameIn = useRef();
   const onClick = () => {
     const inputValue = usernameIn.current.value
